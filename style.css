@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fallback colors so the page does not flash white before Tailwind loads */
+html.dark body {
+  background-color: #020617;
+  color: #cbd5e1;
+}
+
+html:not(.dark) body {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Engineering-paper grid used as a subtle electro accent */
+.grid-pattern {
+  background-image:
+    linear-gradient(to right, rgb(148 163 184 / 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(148 163 184 / 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.fade-mask {
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
